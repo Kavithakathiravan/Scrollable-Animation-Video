@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: black;
+}
+
+/* Canvas animation */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+/* Overlay content */
+.content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    color: #c77dff; /* Purple base */
+}
+
+/* Main heading - purple gradient */
+.content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #8a2be2, #c77dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #d6b3ff;
+    opacity: 0.95;
+}
+
+/* Details text */
+.details p {
+    font-size: 1.1rem;
+    margin: 6px 0;
+    color: #e6ccff;
+    opacity: 0.9;
+}
+
+/* Button - purple neon */
+.btn {
+    margin-top: 25px;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #8a2be2, #ff4ecd);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(186, 85, 255, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px rgba(186, 85, 255, 0.9);
+}
+
+/* Scroll length */
+.scroll-space {
+    height: 700vh;
+}
